@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>AJ</title>
+  <meta name="title" content="Richard Ryan">
+  <meta name="description" content="This is a photographer portfolio html template, made by codewithsadee.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="Richard home">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Richard home" class="img">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact us</a>
+          </li>
+
+        </ul>
+
+        <button class="login-btn" onclick="downloadCV()">
+          <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
+          <span class="span">Downloed CV</span>
+        </button>
+        
+        <script>
+          function downloadCV() {
+            // Assuming the CV file is named "cv.pdf" and located in the "assets" folder
+            const cvUrl = "https://drive.google.com/file/d/1koZ5yyili6kSz2GMiV60PDt8-O0Q4Lir/view?usp=drivesdk";
+            
+            // Create a temporary anchor element to trigger the download
+            const link = document.createElement("a");
+            link.href = cvUrl;
+            link.download = "YourCV.pdf"; // Change this to the desired name of the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        </script>
+        
+
+        <p class="navbar-title">My Address</p>
+
+        <address class="navbar-text">
+          New Balaji Nagar Aurangabad Maharashatra 431001.
+        </address>
+
+        <p class="navbar-text">
+          Urgent issue? call us at
+          <a href="tel:8149776994" class="contact-link">+918149776994</a>
+        </p>
+
+        <p class="navbar-text">
+          ajaysonawane30305@gmail.com
+        </p>
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <img src="./assets/images/Black_and_White_Round_Fashion_Monogram_Logo-removebg-preview (2).png" width="322" height="322" alt="" class="hero-banner">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">AJAY SONAWANE</h1>
+
+            <div class="wrapper h2">
+              <strong class="strong" data-letter-effect>UI Designer</strong>
+              <strong class="strong" data-letter-effect>UX Designer</strong>
+            </div>
+
+            <p class="hero-text">6+ Monts Of Experience.</p>
+
+          </div>
+
+        </div>
+
+        <img src="./assets/images/hero-shape.svg" width="211" height="189" alt="" class="shape">
+
+      </section>
+
+
+      <!-- 
+        - #CATEGORY
+              -->
+      
+
+      <section class="section category" aria-label="photography category">
+        <div class="container">
+
+          <h2 class="h2 section-title" id="portfolio-label" data-reveal>My Skills</h2>
+
+
+          <ul class="category-list">
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+                <h3 class="h4 card-title">HTML 5,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">CSS 5,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Javascript,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Figma,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Python,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Adobe Illustrator,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Sql,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Adobe XD,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">React Js,</h3>
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Git.</h3>
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </div>
+      </section>
+      <div id="moving-text">
+        <div class="con">
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+        </div>
+        <div class="con">
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+        </div>
+        <div class="con">
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+            <h1>BADASS🔥</h1>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title" data-reveal="right">
+              Hi. I’m <br>
+                Ajay Sonawane
+            </h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+
+              <p class="section-text">
+                A passionate
+                <em class="em">UI UX designer</em>
+                who are working in this field for
+                <em class="em">last 6+ Months.</em>
+                I’m ready to give you my best.
+              </p>
+
+              <img src="./assets/images/Pink_Black_Feminine_Minimalist_Signature_Logo-removebg-preview.png" width="151" height="92" loading="lazy" alt="signature"
+                class="img">
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="left">
+
+            <div class="img-holder has-before" style="--width: 512; --height: 684;">
+              <img src="./assets/images/my image.jpg" width="512" height="684" loading="lazy" alt="Riachard Ryan"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/Black_and_White_Round_Fashion_Monogram_Logo-removebg-preview (2).png" width="178" height="178" loading="lazy" alt=""
+              class="shape shape-1">
+
+            <img src="./assets/images/about-shape-2.svg" width="659" height="653" loading="lazy" alt=""
+              class="shape shape-2">
+
+          </figure>
+
+          <img src="./assets/images/about-shape-3.svg" width="239" height="232" loading="lazy" alt=""
+            class="shape shape-3">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-labelledby="service-lable">
+
+        <p class="section-subtitle container" id="service-lable">My Services</p>
+
+        <ul class="service-list">
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              
+
+              <div>
+                <h3 class="h3 card-title">UI UX Designer</h3>
+
+                <p class="card-subtitle">
+                  "Ready to take responsibility".
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              
+
+              <div>
+                <h3 class="h3 card-title">Graphic Designer</h3>
+
+                <p class="card-subtitle">
+                  "Ready to take responsibility".
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              
+
+              <div>
+                <h3 class="h3 card-title">Web Designer</h3>
+
+                <p class="card-subtitle">
+                  "Ready to take responsibility".
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+
+              
+
+              <div>
+                <h3 class="h3 card-title">Videography</h3>
+
+                <p class="card-subtitle">
+                  "Ready to take responsibility".
+                </p>
+              </div>
+
+              <a href="#" class="btn-icon" aria-label="See more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                  <path d="M0 10H41" stroke="white" stroke-width="2" />
+                  <path d="M33 1L41.9 10.2727L33 19" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <div class="portfolio-list">
+
+            <div class="wrapper">
+
+              <h2 class="h2 section-title" id="portfolio-label" data-reveal>My Recent Work.</h2>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/1.jpg" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Shoe Promo</a>
+                  </h3>
+
+                  <p class="card-tag">HTML, CSS, JS, Figma.</p>
+                </div>
+
+                <a href="https://theajdeveloper.github.io/TheShoeFactorynew/" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
+                  <img src="./assets/images/2.jpg" width="700" height="1091" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Traval Bokii</a>
+                  </h3>
+
+                  <p class="card-tag">HTML, CSS, JS.</p>
+                </div>
+
+                <a href="https://theajdeveloper.github.io/Travel-Bookee-and-Guide/" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1000;">
+                  <img src="./assets/images/7.jpg" width="700" height="1000" loading="lazy" alt="Fashion Show"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Trav Guide</a>
+                  </h3>
+
+                  <p class="card-tag">Figma.</p>
+                </div>
+
+                <a href="https://www.figma.com/file/kQpyWrHpt0r9fL82NJyROg/Untitled?type=design&node-id=0%3A1&mode=design&t=GkwHBVGpsp4xMU03-1" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                  <img src="./assets/images/6.jpg" width="700" height="850" loading="lazy" alt="Jumbo Barger"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">H+ Monitor</a>
+                  </h3>
+
+                  <p class="card-tag">Figma</p>
+                </div>
+
+                <a href="https://www.figma.com/file/D0tj9pXCU4BRq2cBYrVs7Y/Untitled?type=design&mode=design&t=GkwHBVGpsp4xMU03-1" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section" id="contact">
+      <div class="container">
+
+        <p class="section-subtitle" data-reveal>Contact Us</p>
+
+        <h2 class="h2 section-title" data-reveal>
+          Hire Me, Send Message.
+        </h2>
+
+        <a href="#" class="btn-icon" data-reveal>
+          <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon">
+        </a>
+
+        
+        <img src="./assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="" class="shape">
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Richard home">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.youtube.com/@ExploreTheRootsvlog" class="social-link">Youtube.</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/explore_the_roots_/" class="social-link">Insta.</a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/ajdeveloper00021/" class="#">linked.</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/TheAJDeveloper" class="#">git.</a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">Made with love</p>
+
+      </div>
+    </div>
+
+    <div class="footer-bg has-before">
+      <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+        class="img-cover">
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
